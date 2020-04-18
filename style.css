@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&display=swap');
 
 /****** Global ******/
 html {
@@ -8,12 +8,45 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 section.content {
     min-height: 100vh;
     padding: 25px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 90%;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card img {
+    height: 80px;
+}
+
+.card .container {
+    padding: 2px 16px;
+    text-align: center;
+}
+
+.card .container h4 {
+    font-size: 18px;
+    margin: 4px 0;
+}
+
+.card .container p {
+    font-size: 16px;
+    margin: 8px 0;
+    text-align: justify;
 }
 
 /****** Navigation Bar ******/
@@ -42,8 +75,9 @@ nav .brand {
 }
 
 nav .brand h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 2em;
+    font-weight: 900;
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
@@ -56,8 +90,9 @@ nav .brand h2 {
 }
 
 nav.black .brand h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 1.75em;
+    font-weight: 900;
     letter-spacing: .5px;
     text-decoration: none;
     text-transform: uppercase;
@@ -84,7 +119,7 @@ nav ul li a {
     line-height: 80px;
     color: #262626;
     padding: 5px 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     transition: .5s;
@@ -120,7 +155,7 @@ section.profile img {
 
 section.profile h1 {
     margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     text-transform: uppercase;
     color: #fff;
     position: relative;
@@ -197,13 +232,14 @@ section.profile ul li:nth-child(3) a:before {
 /***** Studies *****/
 #studies {
     margin: 0 auto;
+    min-height: 75vh;
     text-align: center;
     color: rgb(0, 0, 0);
 }
 
 #studies h1{
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 24px;
     margin-top: 24px;
     margin-bottom: 24px;
     letter-spacing: 2px;
@@ -299,7 +335,7 @@ section.profile ul li:nth-child(3) a:before {
 }
 
 #studies .vertical_line{
-    height: 720px;
+    height: 750px;
     width: 3px;
     background-color: #f00;
 }
@@ -315,6 +351,23 @@ section.content p {
     padding: 0;
     font-size: 1.2em;
 }
+/****** Skills ******/
+#skills {
+    text-align: center;
+}
+
+#skills .wrapper {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+#skills h1{
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    letter-spacing: 2px;
+}
 
 /****** Contact ******/
 #contact {
@@ -322,59 +375,73 @@ section.content p {
     text-align: center;
 }
 
-#contact h3{
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    font-family: 'Roboto', sans-serif;
-}
-
-#contact h2{
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-}
-
-#map{
-    width:100%;
-    height:240px;
-}
-
-.box{
-    float: left;
-    text-align: center;
-    width: 47%;
-    padding: 10px;
-}
-
-#contact .wrapper{
-    grid-template-columns: 50% 50%;
-    padding: 16px;
-}
-
-#contact .w_box{
+#contact .box{
+    padding: 12px;
     width: 100%;
 }
 
-#contact ul {
+#contact h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    letter-spacing: 2px;
+}
+
+#contact .address {
+    padding: 0 0 18px 0;
+}
+
+#contact .address p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: auto;
+    padding: 4px 0;
+}
+
+#contact .contact_phone, 
+#contact .contact_mail,
+#contact .contact_skype{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 8px 0;
+}
+
+#contact .icon {
+    padding: 18px 0;
+}
+
+#contact .icon_font{
+    font-size: 16px;
+    color: #f00;
+    padding-right: 4px;
+}
+
+#contact .icon ul {
     display: inline-flex;
     margin: 0 auto;
     padding: 0;
+    float: none;
+    width: auto;
 }
 
-#contact ul li {
+#contact .icon ul li {
     margin: auto;
     list-style: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
-#contact ul li a {
-    width: 40px;
-    height: 40px;
+#contact .icon ul li a {
+    width: 30px;
+    height: 30px;
     background: #fff;
     text-align: center;
-    line-height: 40px;
-    font-size: 26px;
+    line-height: 30px;
+    font-size: 20px;
     margin: 0 10px;
     display: block;
     border-radius: 50%;
@@ -383,18 +450,18 @@ section.content p {
     border: 2px solid #fff;
 }
 
-#contact ul li a .fa {
+#contact .icon ul li a .fa {
     position: relative;
     color: #262626;
     transition: .5s;
 }
 
-#contact ul li a:hover .fa {
+#contact .icon ul li a:hover .fa {
     color: #fff;
     transform: rotateY(360deg);
 }
 
-#contact ul li a:before {
+#contact .icon ul li a:before {
     content: '';
     position: absolute;
     top: 100%;
@@ -405,25 +472,32 @@ section.content p {
     transition: .5s;
 }
 
-#contact ul li a:hover:before {
+#contact .icon ul li a:hover:before {
     top: 0;
 }
 
-#contact ul li:nth-child(2) a:before {
+#contact .icon ul li:nth-child(1) {
+    font-size: 14px;
+    font-style: normal;
+    letter-spacing: .5px;
+    padding: 4px 0;
+}
+
+#contact .icon ul li:nth-child(2) a:before {
     background: #3b5999;
 }
 
-#contact ul li:nth-child(3) a:before {
+#contact .icon ul li:nth-child(3) a:before {
     background: #0073a4;
 }
 
-#contact ul li:nth-child(4) a:before {
+#contact .icon ul li:nth-child(4) a:before {
     background: #0077B5;
 }
 
 /****** Footer ******/
 #footer{
-    padding: 4px 8px;
+    padding: 2.35px 8px;
     color: #ffffff;
     background: rgba(0, 0, 0, .8);
     text-align: center;
@@ -438,7 +512,7 @@ section.content p {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .responsive-bar {
         display: block;
         width: 100%;
@@ -454,7 +528,7 @@ section.content p {
 
     .responsive-bar .brand h2{
         float: left;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Nunito', sans-serif;
         font-size: 1.25em;
         letter-spacing: .5px;
         text-decoration: none;
@@ -473,16 +547,17 @@ section.content p {
         padding: 0;
         line-height: 50px;
         cursor: pointer;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Nunito', sans-serif;
         font-size: 1em;
         text-transform: uppercase;
     }
 
+    /****** Nav Bar ******/
     nav, nav.black {
         background:#262626;
         height: 60px;
         padding: 0;
-        z-index: initial;
+        z-index: auto;
     }
 
     nav .brand {
@@ -517,20 +592,21 @@ section.content p {
         color: #fff;
     }
 
+    /****** Profile ******/
     section.profile {
-        height: 80vh;
+        height: 50vh;
     }
 
     section.profile img {
-        top: 20%;
+        top: 25%;
     }
 
     section.profile h1 {
-        top: 35%;
+        top: 27.5%;
     }
 
     section.profile ul {
-        top: 50%;
+        top: 31%;
     }
 
     /****** Studies ******/
@@ -550,17 +626,17 @@ section.content p {
         padding: 0 10px;
     }	
 
-    #studies .resumeList{
-        list-style: none;
-        padding-top: 8px;
-        padding-right: 32px;
-    }
-
     #studies .vertical_line{
         height: 3px;
         width: 100%;
         float: right;
         margin: 10px;
+    }
+
+    #studies .resumeList{
+        list-style: none;
+        padding-top: 8px;
+        padding-right: 32px;
     }
     
     #studies .resumePeriod{
@@ -582,5 +658,429 @@ section.content p {
         width: 100%;
         text-align: center;
         padding: 0;
+    }
+
+    /****** Skills ******/
+    #skills .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    /****** Contact ******/
+    #contact {
+        min-height: 40vh;
+    }
+
+    #contact .wrapper{
+        display: block;
+        padding: 0;
+    }
+
+    #contact .box {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #contact .right{
+        float: right;
+        text-align: right;
+        padding: 0 10px;
+    }
+
+    #contact .left{
+        float: left;
+        text-align: left;
+        padding: 0 10px;
+    }
+
+    #contact .vertical_line{
+        height: 3px;
+        width: 100%;
+        float: right;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .responsive-bar {
+        display: block;
+        width: 100%;
+        height: 60px;
+        background: #262626;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 5px 20px;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+
+    .responsive-bar .brand h2{
+        float: left;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.25em;
+        letter-spacing: .5px;
+        text-decoration: none;
+        text-transform: uppercase;
+        line-height: 50px;
+        display: flex;
+        margin: 0 auto;
+        padding: 0;
+        color: #f00;
+    }
+
+    .responsive-bar .menu h4 {
+        float: right;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        line-height: 50px;
+        cursor: pointer;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+
+    /****** Nav Bar ******/
+    nav, nav.black {
+        background:#262626;
+        height: 60px;
+        padding: 0;
+        z-index: auto;
+    }
+
+    nav .brand {
+        display: none;
+    }
+
+    nav ul {
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        background: #262626;
+        float: none;
+        display: none;
+    }
+
+    nav ul.active{
+        display: block;
+    }
+
+    nav ul li {
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        line-height: 30px !important;
+        color: #fff;
+    }
+
+    /****** Profile ******/
+    section.profile {
+        height: 60vh;
+    }
+
+    section.profile img {
+        top: 25%;
+    }
+
+    section.profile h1 {
+        top: 30%;
+    }
+
+    section.profile ul {
+        top: 40%;
+    }
+
+    /****** Studies ******/
+    #studies .box p{
+        padding-right: 0px;
+    }
+
+    #studies .right{
+        float: right;
+        text-align: right;
+        padding: 0 10px;
+    }
+
+    #studies .left{
+        float: left;
+        text-align: left;
+        padding: 0 10px;
+    }	
+
+    #studies .vertical_line{
+        height: 3px;
+        width: 100%;
+        float: right;
+        margin: 10px;
+    }
+
+    #studies .resumeList{
+        list-style: none;
+        padding-top: 8px;
+        padding-right: 32px;
+    }
+    
+    #studies .resumePeriod{
+        background: #f00;
+        color: #fff;
+        padding: 2px 5px;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 12px;
+        font-style: italic;
+        border-radius: 4px;
+    }
+    
+    #studies .wrapper{
+        display: block;
+        padding: 0;
+    }
+    
+    #studies .box{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    
+    /****** Skills ******/
+    #skills .wrapper{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    #skills .wrapper .card {
+        width: 90%;
+        margin: 12px auto;
+    }
+
+    /****** Contact ******/
+    #contact .wrapper{
+        display: block;
+        padding: 0;
+    }
+
+    #contact .box {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #contact .right{
+        float: right;
+        text-align: right;
+        padding: 0 10px;
+    }
+
+    #contact .left{
+        float: left;
+        text-align: left;
+        padding: 0 10px;
+    }
+
+    #contact .vertical_line{
+        height: 3px;
+        width: 100%;
+        float: right;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .responsive-bar {
+        display: block;
+        width: 100%;
+        height: 60px;
+        background: #262626;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 5px 20px;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+
+    .responsive-bar .brand h2{
+        float: left;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.25em;
+        letter-spacing: .5px;
+        text-decoration: none;
+        text-transform: uppercase;
+        line-height: 50px;
+        display: flex;
+        margin: 0 auto;
+        padding: 0;
+        color: #f00;
+    }
+
+    .responsive-bar .menu h4 {
+        float: right;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        line-height: 50px;
+        cursor: pointer;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+
+    /****** Nav Bar ******/
+    nav, nav.black {
+        background:#262626;
+        height: 60px;
+        padding: 0;
+        z-index: auto;
+    }
+
+    nav .brand {
+        display: none;
+    }
+
+    nav ul {
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        background: #262626;
+        float: none;
+        display: none;
+    }
+
+    nav ul.active{
+        display: block;
+    }
+
+    nav ul li {
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        line-height: 30px !important;
+        color: #fff;
+    }
+
+    /****** Profile ******/
+    section.profile {
+        height: 90vh;
+    }
+
+    section.profile img {
+        top: 27.5%;
+    }
+
+    section.profile h1 {
+        top: 32.5%;
+    }
+
+    section.profile ul {
+        top: 67.5%;
+    }
+
+    /****** Studies ******/    
+    #studies .box p{
+        padding-right: 0px;
+    }
+
+    #studies .right{
+        float: right;
+        text-align: right;
+        padding: 0 10px;
+    }
+
+    #studies .left{
+        float: left;
+        text-align: left;
+        padding: 0 10px;
+    }	
+
+    #studies .vertical_line{
+        height: 3px;
+        width: 100%;
+        float: right;
+        margin: 10px;
+    }
+
+    #studies .resumeList{
+        list-style: none;
+        padding-top: 8px;
+        padding-right: 32px;
+    }
+    
+    #studies .resumePeriod{
+        background: #f00;
+        color: #fff;
+        padding: 2px 5px;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 12px;
+        font-style: italic;
+        border-radius: 4px;
+    }
+    
+    #studies .wrapper{
+        display: block;
+        padding: 0;
+    }
+    
+    #studies .box{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    /****** Skills ******/
+    #skills .wrapper{
+        display: block;
+        padding: 0;
+    }
+
+    #skills .wrapper .card {
+        width: 95%;
+    }
+
+    /****** Contact ******/
+    #contact .wrapper{
+        display: block;
+        padding: 0;
+    }
+
+    #contact .box {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #contact .right{
+        float: right;
+        text-align: right;
+        padding: 0 10px;
+    }
+
+    #contact .left{
+        float: left;
+        text-align: left;
+        padding: 0 10px;
+    }
+
+    #contact .vertical_line{
+        height: 3px;
+        width: 100%;
+        float: right;
+        margin: 10px;
     }
 }
