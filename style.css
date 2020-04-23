@@ -13,7 +13,7 @@ body {
 
 section.content {
     min-height: 100vh;
-    padding: 25px;
+    padding: 6em 25px;
 }
 
 .card {
@@ -229,15 +229,15 @@ section.profile ul li:nth-child(3) a:before {
     background: #0077B5;
 }
 
-/***** Studies *****/
-#studies {
+/***** About *****/
+#about {
     margin: 0 auto;
     min-height: 75vh;
     text-align: center;
     color: rgb(0, 0, 0);
 }
 
-#studies h1{
+#about h1{
     text-transform: uppercase;
     font-size: 24px;
     margin-top: 24px;
@@ -245,7 +245,7 @@ section.profile ul li:nth-child(3) a:before {
     letter-spacing: 2px;
 }
 
-#studies h2{
+#about h2{
     text-transform: uppercase;
     font-size: 18px;
     font-weight: normal;
@@ -254,7 +254,7 @@ section.profile ul li:nth-child(3) a:before {
     letter-spacing: 2px;
 }
 
-#studies h3{
+#about h3{
     text-transform: uppercase;
     font-size: 16px;
     font-weight: normal;
@@ -264,40 +264,40 @@ section.profile ul li:nth-child(3) a:before {
     letter-spacing: 2px;
 }
 
-#studies .wrapper{
+#about .wrapper{
     display: grid;
     grid-template-columns: 49% 1% 50%;
 }
 
-#studies .box{
+#about .box{
     padding: 12px;
     width: 100%;
 }
 
-#studies .right{
+#about .right{
     float: right;
     text-align: right;
     padding: 0 10px;
 }
 
-#studies .left .resumeList{
+#about .left .resumeList{
     padding-left: 0;
 }
 
-#studies .left{
+#about .left{
     float: left;
     text-align: left;
     padding: 0 10px;
 }
 
-#studies h5{
+#about h5{
     font-size: 15px;
     font-weight: normal;
     letter-spacing: 2px;
     margin: 10px 0;
 }
 
-#studies p{
+#about p{
     font-size: 15.5px;
     font-weight: normal;
     letter-spacing: 1px;
@@ -305,27 +305,31 @@ section.profile ul li:nth-child(3) a:before {
     margin: 10px 0;
 }
 
-#studies .icon_font{
+#about .icon_font{
     font-size: 38px;
     color: #f00;
     padding-right: 32px;
 }
 
-#studies .top{
+#about .top{
     margin-top: 7px;
 }
 
-#studies .center{
+#about .center{
     text-align: center;
 }
 
-#studies .resumeList{
+#about .resumeList{
     list-style: none;
     padding-top: 8px;
     padding-right: 32px;
 }
 
-#studies .resumePeriod{
+#about .disp {
+    display: inline-block;
+}
+
+#about .resumePeriod{
     background: #f00;
     color: #fff;
     padding: 2px 5px;
@@ -334,23 +338,12 @@ section.profile ul li:nth-child(3) a:before {
     border-radius: 4px;
 }
 
-#studies .vertical_line{
-    height: 750px;
+#about .vertical_line{
+    height: 820px;
     width: 3px;
     background-color: #f00;
 }
 
-section.content h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 2em;
-}
-
-section.content p {
-    margin: 20px 0 0;
-    padding: 0;
-    font-size: 1.2em;
-}
 /****** Skills ******/
 #skills {
     text-align: center;
@@ -373,6 +366,7 @@ section.content p {
 #contact {
     min-height: 72.15vh;
     text-align: center;
+    padding: 4em 25px;
 }
 
 #contact .box{
@@ -609,37 +603,37 @@ section.content p {
         top: 31%;
     }
 
-    /****** Studies ******/
-    #studies .box p{
+    /****** About ******/
+    #about .box p{
         padding-right: 0px;
     }
 
-    #studies .right{
+    #about .right{
         float: right;
         text-align: right;
         padding: 0 10px;
     }
 
-    #studies .left{
+    #about .left{
         float: left;
         text-align: left;
         padding: 0 10px;
     }	
 
-    #studies .vertical_line{
+    #about .vertical_line{
         height: 3px;
         width: 100%;
         float: right;
         margin: 10px;
     }
 
-    #studies .resumeList{
+    #about .resumeList{
         list-style: none;
         padding-top: 8px;
         padding-right: 32px;
     }
     
-    #studies .resumePeriod{
+    #about .resumePeriod{
         background: #f00;
         color: #fff;
         padding: 2px 5px;
@@ -649,12 +643,12 @@ section.content p {
         border-radius: 4px;
     }
     
-    #studies .wrapper{
+    #about .wrapper{
         display: block;
         padding: 0;
     }
     
-    #studies .box{
+    #about .box{
         width: 100%;
         text-align: center;
         padding: 0;
@@ -799,37 +793,37 @@ section.content p {
         top: 40%;
     }
 
-    /****** Studies ******/
-    #studies .box p{
+    /****** About ******/
+    #about .box p{
         padding-right: 0px;
     }
 
-    #studies .right{
+    #about .right{
         float: right;
         text-align: right;
         padding: 0 10px;
     }
 
-    #studies .left{
+    #about .left{
         float: left;
         text-align: left;
         padding: 0 10px;
     }	
 
-    #studies .vertical_line{
+    #about .vertical_line{
         height: 3px;
         width: 100%;
         float: right;
         margin: 10px;
     }
 
-    #studies .resumeList{
+    #about .resumeList{
         list-style: none;
         padding-top: 8px;
         padding-right: 32px;
     }
     
-    #studies .resumePeriod{
+    #about .resumePeriod{
         background: #f00;
         color: #fff;
         padding: 2px 5px;
@@ -839,12 +833,12 @@ section.content p {
         border-radius: 4px;
     }
     
-    #studies .wrapper{
+    #about .wrapper{
         display: block;
         padding: 0;
     }
     
-    #studies .box{
+    #about .box{
         width: 100%;
         text-align: center;
         padding: 0;
@@ -991,37 +985,38 @@ section.content p {
         top: 67.5%;
     }
 
-    /****** Studies ******/    
-    #studies .box p{
+    /****** About ******/    
+    #about .box p{
         padding-right: 0px;
     }
 
-    #studies .right{
+    #about .right{
         float: right;
         text-align: right;
         padding: 0 10px;
     }
 
-    #studies .left{
+    #about .left{
         float: left;
         text-align: left;
         padding: 0 10px;
     }	
 
-    #studies .vertical_line{
+    #about .vertical_line{
         height: 3px;
         width: 100%;
         float: right;
         margin: 10px;
     }
 
-    #studies .resumeList{
+    #about .resumeList{
         list-style: none;
+        overflow: hidden;
         padding-top: 8px;
         padding-right: 32px;
     }
     
-    #studies .resumePeriod{
+    #about .resumePeriod{
         background: #f00;
         color: #fff;
         padding: 2px 5px;
@@ -1031,12 +1026,12 @@ section.content p {
         border-radius: 4px;
     }
     
-    #studies .wrapper{
+    #about .wrapper{
         display: block;
         padding: 0;
     }
     
-    #studies .box{
+    #about .box{
         width: 100%;
         text-align: center;
         padding: 0;
