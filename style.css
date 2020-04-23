@@ -366,7 +366,7 @@ section.profile ul li:nth-child(3) a:before {
 #contact {
     min-height: 72.15vh;
     text-align: center;
-    padding: 4em 25px;
+    padding: 4em 25px 0 25px;
 }
 
 #contact .box{
